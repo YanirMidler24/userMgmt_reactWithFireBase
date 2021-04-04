@@ -14,9 +14,9 @@ export default function HostComp() {
         <DataAPiProvider>
           <NavBar />
           <Switch>
-            <Route exact path="/" component={Login} />
+            <Route exact path="/" component={Signup} />
             <Route path="/HomePage" component={HomePage} />
-            <Route path="/Signup" component={Signup} />
+            <Route path="/Login" component={Login} />
           </Switch>
         </DataAPiProvider>
       </AuthAPIProvider>

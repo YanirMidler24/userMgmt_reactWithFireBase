@@ -68,7 +68,7 @@ export default function Signup() {
 
     await signup(email, password);
     await addUsertoDB(fname, lname, email);
-    history.push("/");
+    history.push("/Login");
 
     setLoading(false);
   }
@@ -152,7 +152,7 @@ export default function Signup() {
             </Button>
             <Grid container justify="flex-end">
               <Grid item>
-                <a href="/" variant="body2">
+                <a href="/Login" variant="body2">
                   {" "}
                   Already have an account? Sign in
                 </a>

@@ -82,7 +82,7 @@ export default function NavBar() {
     try {
       await logout();
       setLoginFlagAPI(true);
-      history.push("/");
+      history.push("/Login");
     } catch {
       setError("Failed to log out");
       alert(error);
